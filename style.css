@@ -1,0 +1,178 @@
+html {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 1.375rem; /* 22px converted to rem */
+  color: seashell;
+  opacity: 0.9;
+}
+
+#Logo {
+  display: inline-flex;
+  height: 2.75rem; /* 50px converted to rem */
+  margin-left: 1rem; /* 10px converted to rem */
+}
+
+.Links p {
+  color: white;
+  text-decoration: underline;
+  display: inline-flex;
+}
+
+#nav-bar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Links li {
+  margin-left: 1.25rem; /* 20px converted to rem */
+}
+
+.Links {
+  margin-left: auto;
+}
+
+#mission_img {
+  display: block;
+  max-width: 100%;  /* Ensure the image does not exceed its natural width */
+  height: auto;    /* Maintain aspect ratio */
+  width: 90%;
+  margin: 0.875rem auto; /* 14px converted to rem */
+  position: relative;
+  z-index: 8;
+  margin-bottom: 3.125rem; /* 50px converted to rem */
+}
+
+
+#banner_text {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 8.125rem; /* 130px converted to rem */
+  padding-bottom: 1.5625rem; /* 25px converted to rem */
+}
+
+#Tea_of_the_month {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1.25rem; /* 20px converted to rem */
+  text-align: center;
+  margin: 1.25rem auto; /* 20px converted to rem */
+  max-width: 75rem; /* 1200px converted to rem */
+}
+
+.totm {
+  text-align: center;
+}
+
+.tea-item {
+  flex: 0 0 calc(33.33% - 1.25rem); /* Three items per row with gap of 20px converted to rem */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tea-item img {
+  width: 100%;
+  height: 12.5rem; /* 200px converted to rem */
+  object-fit: cover;
+  border-radius: 0.5rem; /* 8px converted to rem */
+}
+
+.tea-item h4 {
+  margin-top: 1.25rem; /* 10px converted to rem */
+  color: seashell;
+}
+
+@media screen and (max-width: 767px) {
+  #Tea_of_the_month .tea-item {
+    flex: 0 0 calc(50% - 1.25rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #Tea_of_the_month .tea-item {
+    flex: 0 0 100%;
+  }
+}
+
+#Locations {
+  position: relative;
+}
+
+#Locations img {
+  display: block;
+  max-width: 100%;
+  height: 500px;
+  width: 90%;
+  object-fit: cover;
+  margin-left: 59px;
+}
+
+#Locations h2 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4; /* Ensure the h2 is above the image and containers */
+  color: seashell;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired overlay darkness */
+  z-index: 2; /* Ensure the overlay is above the image */
+}
+
+.locations-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 3; /* Ensure the text is above the overlay */
+}
+
+.location_container {
+  color: seashell;
+  text-align: center;
+  background-color: black; /* Add background color */
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 8px; /* Optional: Add border-radius for a rounded appearance */
+  margin-right: 40px;
+  margin-left: 30px;
+  width: 300px;
+}
+
+footer {
+  text-align: center;
+}
+
+.copyright {
+  text-align: left;
+  margin-left: 20px;
+}
+
+
+
+
